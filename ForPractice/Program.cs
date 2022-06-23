@@ -1,9 +1,11 @@
 using Microsoft.EntityFrameworkCore;
+using ForPractice.Model;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+builder.Services.AddDbContext<BookNetDBContext>(ops => ops.UseSqlServer("Server=(localdb)\\MSSQLLocalDB; Database=BookNet; Trusted_Connection=True;"));
 
 var app = builder.Build();
 
