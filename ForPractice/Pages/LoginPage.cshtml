@@ -2,7 +2,7 @@
 @model ForPractice.Pages.LoginPageModel
 @{
 }
-
+<div class="loginmain">
 <div class="form-wrapper">
     <div class="form-wrapper__card">
         <form method="post">
@@ -15,11 +15,18 @@
                 <input id="passwordId" name="password" type="password" />
             </div>
             <button class="btn btn-outline-dark" type="submit">Log in</button>
+            <button class="btn btn-outline-dark" asp-page="RegistrationPage"> Registration</button>
         </form>
+            @Model.Nickname
+    @Model.Password
     </div>
 </div>
+<div class="coluns" >
+    <h1>ROAD TO THE DREAM</h1>
+    <video src="~/images/ИГОРЬ ВОЙТЕНКО МОТИВИРУЕТ ВИДЕО.mp4" autoplay="autoplay" controls="controls"></video>
 
+</div>
 <div>
-    @Model.Nickname
-    @Model.Password
+
+</div>
 </div>
