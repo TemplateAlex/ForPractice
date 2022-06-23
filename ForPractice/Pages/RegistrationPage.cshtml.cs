@@ -32,7 +32,7 @@ namespace ForPractice.Pages
             var existUser = _context.Users.FirstOrDefault(elem => elem.Nickname == Nickname);
 
 
-            if (existUser == null && Password == Reppasswd)
+            if (existUser == null && Password == Reppasswd && Name != null && Nickname != null && Password != null)
             {
                 User user = new User();
                 user.Name = Name;

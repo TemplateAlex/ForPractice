@@ -124,3 +124,32 @@ body {
 .gridcontainer h4 {
     font-size: 16px;
 }
+
+.loginmain {
+    margin: 50px;
+    padding: 10px 10px 10px 10px;
+    width: 90%;
+    height: 500px;
+    justify-content: left;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    background-color: #ffffff94;
+    border-radius: 10px;
+}
+
+.coluns {
+    margin: 10px 10px 10px 10px;
+}
+
+.form-wrapper {
+    width: 300px;
+}
+
+.btn-outline-dark {
+    margin: 10px 2px 2px 2px;
+}
+
+.form-group input {
+    border-radius: 5px;
+}
