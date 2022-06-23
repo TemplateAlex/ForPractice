@@ -5,7 +5,6 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
-builder.Services.AddSession();
 builder.Services.AddDbContext<BookNetDBContext>(ops => ops.UseSqlServer("Server=(localdb)\\MSSQLLocalDB; Database=BookNet; Trusted_Connection=True;"));
 
 var app = builder.Build();
@@ -20,7 +19,6 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
-app.UseSession();
 
 app.UseRouting();
 
