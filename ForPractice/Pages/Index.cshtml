@@ -1,4 +1,5 @@
 ﻿@page
+@using Microsoft.AspNetCore.Http;
 @model IndexModel
 @{
     ViewData["Title"] = "Home page";
@@ -96,6 +97,9 @@
     </a>
 </div>
 </div>
+
+@HttpContext.Session.GetString("role")
+@HttpContext.Session.GetString("nickname")
 
 <a asp-page="LoginPage">Login</a>
 <a asp-page="RegistrationPage">Registration</a>
