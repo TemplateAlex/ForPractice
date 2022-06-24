@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="~/ForPractice.styles.css" asp-append-version="true" />
 </head>
 <body>
-    <header>
+    <div class="main-wrapper d-flex flex-column">
+        <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
                 <img class="iconssize " src="~/images/home.png" />
@@ -21,9 +22,9 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                     <li class="nav-item">
-                            <a class="navbar-brand" asp-area="" asp-page="/Index"><img class="iconssize" src="~/images/search.png" /></a>
+                            <a class="navbar-brand" asp-area="" asp-page="Index"><img class="iconssize" src="~/images/search.png" /></a>
                             <a class="navbar-brand" asp-area="" asp-page="/Index"><img class="iconssize" src="~/images/bookmark.png" /> </a>
-                            <a class="navbar-brand" asp-area="" asp-page="/Index"><img class="iconssize" src="~/images/уолтер-уайт-64.png" /></a>
+                            <a class="navbar-brand" asp-area="" asp-page="LoginPage"><img class="iconssize" src="~/images/уолтер-уайт-64.png" /></a>
                     </li>
 
                     </ul>
@@ -32,7 +33,7 @@
         </nav>
     </header>
     <div class="container">
-        <main role="main" class="pb-3">
+        <main role="main" class="main pb-3">
             @RenderBody()
         </main>
     </div>
@@ -42,6 +43,7 @@
             &copy; 2022 - ForPractice - <a asp-area="" asp-page="/Privacy">Privacy</a>
         </div>
     </footer>
+    </div>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
