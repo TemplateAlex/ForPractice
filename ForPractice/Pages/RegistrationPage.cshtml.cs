@@ -26,6 +26,7 @@ namespace ForPractice.Pages
         }
         public void OnGet()
         {
+
         }
 
         public async Task<IActionResult> OnPost()
